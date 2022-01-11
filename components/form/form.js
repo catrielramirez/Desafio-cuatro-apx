@@ -65,7 +65,7 @@ function sendData(formEl, inputs) {
 		})
 			.then(() => {
 				alert(
-					"Mensaje enviado. Gracias, " + object.userName + " por cominucarte!"
+					"Mensaje enviado. Gracias, " + object.userName + " por comunicarte!"
 				);
 
 				inputs.forEach((input) => {
@@ -74,7 +74,7 @@ function sendData(formEl, inputs) {
 			})
 			.catch(() => {
 				alert(
-					"Error al enviar, revise haber completado los campos correctamente"
+					"Ha ocurrido un error, revise haber completado los campos correctamente"
 				);
 			});
 	});
