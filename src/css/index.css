@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.container-header-welcome {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../../images//welcome-img.png");
+	background-size: cover;
+}
+
+.section-welcome {
+	color: white;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-welcome__title {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 54px;
+	text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
+}
+
+.subtitle {
+	margin-top: 10px;
+	font-size: 39px;
+}
+
+/* About me */
+
+.section-about-me {
+	height: 100vh;
+	background-color: #9639fb;
+	color: white;
+}
+
+@media (min-width: 769px) {
+	.section-about-me {
+		background-color: #1a2428;
+		color: #91d2dd;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		padding: 40px;
+	}
+}
+
+.section-about-me__content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	padding: 40px;
+}
+
+@media (min-width: 769px) {
+	.section-about-me__content {
+		padding: 0;
+	}
+}
+
+.section-about-me__title {
+	margin: 0;
+	font-size: 32px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.section-about-me__paragraph {
+	text-align: center;
+	max-width: 600px;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 769px) {
+	.section-about-me__paragraph {
+		text-align: initial;
+	}
+}
+
+.section-about-me__container-img {
+	display: none;
+}
+
+@media (min-width: 769px) {
+	.section-about-me__container-img {
+		display: block;
+	}
+}
+
+.section-about-me__img {
+	border-radius: 10%;
+	height: 400px;
+	width: 380px;
+}
+
+/* Services */
+
+.section-services {
+	background-color: #e2e3e1;
+	padding: 70px 30px;
+}
+
+.section-services__container-title {
+	margin-bottom: 50px;
+}
+
+.section-services__title {
+	text-align: center;
+	margin: 0;
+	font-size: 32px;
+	font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 769px) {
+	.section-services__title {
+		font-size: 48px;
+	}
+}
+
+.section-services__container-card {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+@media (min-width: 769px) {
+	.section-services__container-card {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 6%;
+		max-width: 100%;
+	}
+}
+
+.section-services__card {
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 12px -5px rgb(0 0 0 / 90%);
+}
+
+.section-services__card:hover {
+	box-shadow: 12px 12px 32px 10px rgb(0 0 0 / 30%);
+}
+
+.section-services__card-img {
+	width: 100%;
+	height: 130px;
+	object-fit: contain;
+	object-position: center;
+	border-radius: 10px 10px 0 0;
+	margin-top: 20px;
+}
+
+.section-services__subcontainer {
+	padding: 10px;
+	display: grid;
+	grid-template-rows: 90px 100px;
+	gap: 10px;
+}
+
+.section-services__card-title {
+	font-size: 24px;
+	margin: 18px 0;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+
+.section-services__card-description {
+	text-align: center;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	margin: 0;
+	overflow: auto; /* Para hacer la ruedita */
+}

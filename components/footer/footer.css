@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.footer {
+	background-color: #e9e9fb;
+	height: 500px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 769px) {
+	.footer {
+		height: 250px;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 80px;
+	}
+}
+
+.footer__logo-container {
+	margin: 0 0 36px;
+	filter: inherit;
+	mix-blend-mode: multiply;
+}
+
+@media (min-width: 769px) {
+	.footer__logo-container {
+		margin: 0;
+	}
+}
+
+.footer__logo {
+	width: 140px;
+	height: 115px;
+}
+
+.footer__contact-social-media {
+	color: black;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+}
+.footer__social-media-name {
+	margin: 0;
+}
+
+@media (min-width: 769px) {
+	.footer__contact-social-media {
+		margin: 0;
+	}
+}
+
+.footer__social-media-section {
+	min-width: 100px;
+	display: flex;
+	gap: 10px;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer__instagram-img {
+	height: 32px;
+	width: 32px;
+}
+
+.footer__linkedin-img {
+	height: 32px;
+	width: 32px;
+}
+
+.footer__github-link {
+	color: inherit;
+	text-decoration: none;
+	display: flex;
+	gap: 10px;
+	flex-direction: row-reverse;
+}
+
+.footer__github-img {
+	height: 32px;
+	width: 32px;
+}

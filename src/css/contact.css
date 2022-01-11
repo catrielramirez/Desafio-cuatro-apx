@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.main-container {
+	background-color: #837da1;
+}
+
+.upper-container {
+	background-color: transparent;
+	color: white;
+}
+.section-contact {
+	background-color: inherit;
+}
+
+@media (min-width: 769px) {
+	.upper-container {
+		background: #adc685;
+	}
+}
+.form {
+	background-color: inherit;
+}
+
+/* @media (min-width: 769px) {
+	.form {
+		background-color: inherit;
+	}
+} */
+
+.header__desktop-link:hover {
+	color: black;
+}
